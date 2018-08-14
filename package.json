@@ -1,0 +1,31 @@
+{
+  "name": "es6-karma-jasmine-webpack-babel-istanbul-coverage-boilerplate",
+  "devDependencies": {
+    "@babel/core": "7.0.0-rc.1",
+    "@babel/plugin-proposal-class-properties": "7.0.0-rc.1",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-rc.1",
+    "@babel/preset-env": "7.0.0-rc.1",
+    "babel-core": "^7.0.0-0",
+    "babel-loader": "7.1.5",
+    "istanbul-instrumenter-loader": "3.0.1",
+    "jasmine": "^3.2.0",
+    "jasmine-ajax": "3.4.0",
+    "jasmine-core": "^3.2.0",
+    "karma": "^0.13.2",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-coverage": "1.1.2",
+    "karma-coverage-istanbul-reporter": "2.0.1",
+    "karma-jasmine": "^1.1.2",
+    "karma-jasmine-ajax": "0.1.13",
+    "karma-mocha-reporter": "2.2.5",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-webpack": "^2.0.0",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "clean:coverage": "rm -rf coverage",
+    "test": "karma start karma.conf.js",
+    "pretest:coverage": "npm run clean:coverage",
+    "test:coverage": "karma start --single-run --no-auto-watch --coverage=true"
+  }
+}
